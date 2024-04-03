@@ -1,0 +1,5 @@
+.nav__logo__container::before{
+  font-weight: bold;
+  color: salmon;
+  content: "Smll";
+}

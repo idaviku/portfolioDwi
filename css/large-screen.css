@@ -1,0 +1,39 @@
+.nav__logo__container::before{
+  font-weight: bold;
+  color: lawngreen;
+  content: "Lrge";
+}
+.visuallyHidden{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.header__content{
+  font-size: 2rem;
+  padding: 1.6rem 1.6rem .2rem;
+}
+.nav__btnMenu__container{
+  display: none;
+}
+.nav__menu__container{
+  display: flex;
+  height: 100%;
+  width: auto;
+  background: inherit;
+  flex-direction: column-reverse;
+}
+.nav__container__items{
+  display: flex;
+}
+.nav__container__items .nav__item{
+  margin: 1rem 0 0;
+}
+.nav__container__items .nav__item:hover{
+  background: mediumaquamarine;
+}
+.nav__item__a{
+  padding: 1rem 3rem;
+}
+.nav__item__logo a:hover{
+  color: tomato;
+}
