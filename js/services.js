@@ -4,15 +4,12 @@
 
 */
 
-// Ejemplo de uso
-const apiUrl = 'https://api.github.com/users/idaviku';
-
-fetchData(apiUrl)
+fetchData(apisUrl.github.user_url)
   .then(data => {
-    // Trabajar con los datos obtenidos
     console.log('Datos obtenidos:', data);
   })
   .catch(error => {
-    // Manejar errores
     console.error('Error al obtener los datos:', error);
   });
+
+fetchData(apisUrl.dataJson).then(data =>{console.log(data)})
