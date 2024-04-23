@@ -2,7 +2,7 @@
       contenido: utilidades, funciones auxiliares globales
       (ayuda, constantes, configuraciones)
 */
-const apisUrl = {
+export const apisUrl = {
     github:{
         user_url:'https://api.github.com/users/idaviku',
         repos_url:'https://api.github.com/users/idaviku/repos',
@@ -12,7 +12,7 @@ const apisUrl = {
     dataJson:'../data-cv.json'
 };
 
-async function fetchData(url) {
+export async function fetchData(url) {
   try {
       const response = await fetch(url);
       if (!response.ok) {
