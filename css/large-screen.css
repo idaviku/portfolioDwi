@@ -3,6 +3,9 @@
   color: lawngreen;
   content: "Lrge";
 }
+.display__blur{
+  display: none;
+}
 .visuallyHidden{
   position: relative;
   padding: 0;
@@ -29,11 +32,11 @@
   margin: 1rem 0 0;
 }
 .nav__container__items .nav__item:hover{
-  background: mediumaquamarine;
+  background: #d4a026;
 }
 .nav__item__a{
   padding: 1rem 3rem;
 }
 .nav__item__logo a:hover{
-  color: tomato;
+  color: #d4a026;
 }
