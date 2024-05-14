@@ -1,8 +1,8 @@
 :root {
-  --negro: #313131;
+  --negro: #07070a;
   --blanco: #ececec;
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-principal: -apple-system, Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
 }
 
