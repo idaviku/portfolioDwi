@@ -22,7 +22,6 @@ export async function fetchData(url) {
       return data;
   } catch (error) {
       console.error('Ocurrió un error:', error);
-      // Puedes manejar el error de manera específica aquí, como mostrar un mensaje al usuario
       throw error;
   }
 }

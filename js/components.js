@@ -1,15 +1,29 @@
 
-
 export class galleryRepos extends HTMLElement{
-  constructor(){
-    super()
-    this.attachShadow({mode:"open"})
-  }
-  connectedCallback(data){
+  // constructor(){
+  //   super()
+  // }
+  connectedCallback(){
     console.log("elemento personalizado agregado")
-    this.shadowRoot.appendChild(this.renderGallery(data))
-    console.log(this.renderGallery(data))
-  }
+    // this.attachShadow({mode:"open"})
+    // try {
+    //   if (data) {
+    //     this.shadowRoot.innerHTML=`${data}`
+    //     // this.shadowRoot.appendChild(data)
+    //     console.log(data)
+    //     console.log(this.shadowRoot)
+    //     console.log("en callback "+data.isConnected)
+    //   } else {
+    //     this.shadowRoot.innerHTML=`${data}`
+    //   }
+    // } catch (error) {
+    //   console.log(`esperando...${error}`)  
+    // }
+}
+  // attributeChangedCallback(attr, oldValue, newValue){
+  //   console.log("elemento personalizado modificado")
+  //   this.renderGallery(this)
+  // }
   disconnectedCallback(){
     console.log("elemento eliminado")
   }
@@ -51,11 +65,13 @@ export class galleryRepos extends HTMLElement{
       projectItem.appendChild(category);
       projectItem.appendChild(description);
       gallery.appendChild(anchorItem);
-      
+
     });
-    console.log(gallery)
-    return gallery
-  }
-  
+    this.attachShadow({mode:'open'})
+    this.shadowRoot.appendChild(gallery)
+    console.log(gallery.isConnected)
+    // this.connectedCallback()
+    // console.log(gallery)
+  }  
 }
 customElements.define("gallery-repos",galleryRepos)
