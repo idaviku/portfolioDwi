@@ -3,6 +3,10 @@
         por componentes
 
 */
+import {nameGlobal} from './utils.js'
+
+const originalText=nameGlobal.innerText
+const characters=originalText.split('')
 
 export function renderProfile(data){
   console.log(`usuario: ${data.login} `)
@@ -52,3 +56,30 @@ export function renderGallery(data) {
   });
   divhtml.appendChild(gallery)
 }
+
+function characterRandomLetter(character){
+  if (character === ' ') {
+    return ' ';
+  }else{
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const randomNumber = Math.floor(Math.random() * alphabet.length);
+    return alphabet[randomNumber];
+  }
+}
+function animateText() {
+  let newText = '';
+  for (let index = 0; index < characters.length; index++) {
+    newText+=characterRandomLetter(characters[index])
+  }
+  while (newText.length !== originalText.length) {
+    newText = newText.substring(0,newText.length - 1)
+    newText += characterRandomLetter(characters[newText.length])
+  }
+  nameGlobal.innerText=newText
+}
+const animationInterval = setInterval(animateText, 150);
+
+setTimeout(() => {
+  clearInterval(animationInterval);
+  nameGlobal.innerText = originalText;
+}, 3000);
