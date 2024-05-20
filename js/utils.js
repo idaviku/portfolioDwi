@@ -11,7 +11,7 @@ export const apisUrl = {
     },
     dataJson:'../data-cv.json'
 };
-
+export const nameGlobal = document.querySelector('.hero__h1__name')
 export async function fetchData(url) {
   try {
       const response = await fetch(url);
