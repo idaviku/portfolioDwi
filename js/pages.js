@@ -8,18 +8,65 @@ import {nameGlobal} from './utils.js'
 const originalText=nameGlobal.innerText
 const characters=originalText.split('')
 
-export function renderProfile(data){
-  console.log(`usuario: ${data.login} `)
+function formatDate(fecha) {
+  const formatMonth = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
+  const objDate= new Date(fecha)
+  const year=objDate.getFullYear()
+  const month=objDate.getMonth()
+  return `${formatMonth[month]} ${year}`
 }
-export function renderRepos(data){
-data.forEach(element => {
-  console.log(`repos: ${element.name}`)
-});
-}
-export function renderPrintCV(data){
-  console.log(`resumen: ${data.basics.summary}`)
-}
+export function renderExperience(data){
+  const divhtml = document.querySelector('.experience__container')
+  const Experience = document.createElement('div')
+  Experience.classList.add('about__experience__container')
+  data.work.forEach(experience => {
+    console.log(experience.name)
+    const containerWork = document.createElement('div')
+    containerWork.classList.add('experience__work')
+    const bullet = document.createElement('span')
+    bullet.classList.add('bullet')
+    bullet.textContent='•'
+    const nameCompany = document.createElement('h3')
+    nameCompany.classList.add('experience__company')
+    nameCompany.textContent=experience.name
+    const namePosition = document.createElement('h4')
+    namePosition.classList.add('experience__position')
+    namePosition.textContent=experience.position
+    const endDate = document.createElement('time')
+    endDate.classList.add('experience__enddate')
+    endDate.setAttribute('datetime',experience.endDate)
+    endDate.textContent=formatDate(experience.endDate)
+    const constainerDescription = document.createElement('div')
+    constainerDescription.classList.add('experience__description')
+    const summary = document.createElement('p')
+    summary.classList.add('experience__summary')
+    summary.textContent=experience.summary
+    const containerMoreInfo = document.createElement('div')
+    containerMoreInfo.classList.add('experience__more__info')
+    const summaryTools = document.createElement('span')
+    summaryTools.classList.add('experience__tools')
+    summaryTools.classList.add('global__button')
+    summaryTools.innerHTML='&Hat; Tools'
+    const summaryProjects = document.createElement('span')
+    summaryProjects.classList.add('experience__projects')
+    summaryProjects.classList.add('global__button')
+    summaryProjects.innerHTML='&Hat; Projects'
 
+    containerWork.appendChild(bullet)
+    containerWork.appendChild(nameCompany)
+    containerWork.appendChild(namePosition)
+    containerWork.appendChild(endDate)
+    constainerDescription.appendChild(summary)
+    constainerDescription.appendChild(containerMoreInfo)
+    containerMoreInfo.appendChild(summaryTools)
+    containerMoreInfo.appendChild(summaryProjects)
+    Experience.appendChild(containerWork)
+    Experience.appendChild(constainerDescription)
+    
+  })
+  divhtml.appendChild(Experience)
+  console.log(divhtml)
+}
 export function renderGallery(data) {
   const divhtml = document.getElementById('render__gallery')
   const gallery = document.createElement('div');

@@ -15,7 +15,6 @@ async function getUser(){
 }
 async function getRepos(){
   const data = await fetchData(apisUrl.github.repos_url)
-  render.renderRepos(data)
   render.renderGallery(data)
   // const gallery = new galleryRepos()
   // gallery.renderGallery(data)
@@ -27,7 +26,7 @@ async function getRepos(){
 }
 async function getDataCurriculum(){
   const data = await fetchData(apisUrl.dataJson)
-  render.renderPrintCV(data)
+  render.renderExperience(data)
 }
 getRepos()
 getUser()
