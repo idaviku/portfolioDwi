@@ -46,8 +46,8 @@
       "Started the company"
     ]
   },{
-    "Name": "Unidad Ejecutora 120 MINEDU",
-    "Position": "Control De Calidad",
+    "name": "Unidad Ejecutora 120 MINEDU",
+    "position": "Control De Calidad",
     "url": "null",
     "startDate": "2020-09-01",
     "endDate": "2022-04-01",
@@ -59,7 +59,7 @@
     ]
   },{
     "name": "Smartteg SAC",
-    "Position": "Especialista En Tecnología Informática",
+    "position": "Especialista En Tecnología Informática",
     "url": "https://www.smartteg.com/",
     "startDate": "2017-12-01",
     "endDate": "2020-04-01",
@@ -70,8 +70,8 @@
       "Started the company"
     ]
   },{
-    "Name": "Agencia De Aduana Transcontinental",
-    "Position": "Asistente De Sistemas",
+    "name": "Agencia De Aduana Transcontinental",
+    "position": "Asistente De Sistemas",
     "url": "null",
     "startDate": "2016-04-01",
     "endDate": "2017-04-01",
@@ -82,8 +82,8 @@
       "Started the company"
     ]
   },{
-    "Name": "Business Computer Services Sac",
-    "Position": "Soporte Técnico",
+    "name": "Business Computer Services Sac",
+    "position": "Soporte Técnico",
     "url": "null",
     "startDate": "2015-10-01",
     "endDate": "2016-02-01",
@@ -94,8 +94,8 @@
       "Started the company"
     ]
   },{
-    "Name": "Alternativa Tecnológica Sac",
-    "Position": "Soporte Técnico",
+    "name": "Alternativa Tecnológica Sac",
+    "position": "Soporte Técnico",
     "url": "https://www.atsac.com.pe/",
     "startDate": "2015-03-01",
     "endDate": "2015-09-01",
