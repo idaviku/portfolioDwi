@@ -11,3 +11,18 @@ seeMenu.onclick = () => {
 /* seeMenu.addEventListener("click",()=>{
   cambiarEstado();
 }) */
+
+function openModal(modalId) {
+  // const modal = document.getElementById(modalId);
+  const modal=document.querySelector(`.${modalId}`)
+  if (modal) {
+    modal.showModal();
+  }
+}
+function closeModal(modalId) {
+  // const modal = document.getElementById(modalId);
+  const modal=document.querySelector(`.${modalId}`)
+  if (modal) {
+    modal.close();
+  }
+}
