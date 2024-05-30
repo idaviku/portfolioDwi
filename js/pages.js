@@ -8,6 +8,8 @@ import {nameGlobal} from './utils.js'
 const originalText=nameGlobal.innerText
 const characters=originalText.split('')
 
+
+
 function formatDate(fecha) {
   const formatMonth = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic']
   const objDate= new Date(fecha)
@@ -19,8 +21,8 @@ export function renderExperience(data){
   const divhtml = document.querySelector('.experience__container')
   const Experience = document.createElement('div')
   Experience.classList.add('about__experience__container')
+  var iter=0
   data.work.forEach(experience => {
-    console.log(experience.name)
     const containerWork = document.createElement('div')
     containerWork.classList.add('experience__work')
     const bullet = document.createElement('span')
@@ -36,36 +38,68 @@ export function renderExperience(data){
     endDate.classList.add('experience__enddate')
     endDate.setAttribute('datetime',experience.endDate)
     endDate.textContent=formatDate(experience.endDate)
-    const constainerDescription = document.createElement('div')
-    constainerDescription.classList.add('experience__description')
+    const containerDescription = document.createElement('div')
+    containerDescription.classList.add('experience__description')
     const summary = document.createElement('p')
     summary.classList.add('experience__summary')
     summary.textContent=experience.summary
     const containerMoreInfo = document.createElement('div')
     containerMoreInfo.classList.add('experience__more__info')
-    const summaryTools = document.createElement('span')
+    const summaryTools = document.createElement('button')
+    summaryTools.setAttribute('type', 'button')
     summaryTools.classList.add('experience__tools')
+    summaryTools.setAttribute('onclick',`openModal('experience__tools__modal${iter}')`)
     summaryTools.classList.add('global__button')
     summaryTools.innerHTML='&Hat; Tools'
-    const summaryProjects = document.createElement('span')
+    const containerModalTools=document.createElement('dialog')
+    containerModalTools.classList.add(`experience__tools__modal${iter}`)
+    const titlePopupTools=document.createElement('h2')
+    titlePopupTools.textContent='HERRAMIENTAS'
+    const messagePopupTools=document.createElement('p')
+    messagePopupTools.textContent=experience.tools
+    const buttonCloseModalTools=document.createElement('button')
+    buttonCloseModalTools.setAttribute('type','button')
+    buttonCloseModalTools.textContent='close'
+    buttonCloseModalTools.setAttribute('onclick',`closeModal('experience__tools__modal${iter}')`)
+    const summaryProjects = document.createElement('button')
+    summaryProjects.setAttribute('type','button')
     summaryProjects.classList.add('experience__projects')
+    summaryProjects.setAttribute('onclick',`openModal('experience__project__modal${iter}')`)
     summaryProjects.classList.add('global__button')
     summaryProjects.innerHTML='&Hat; Projects'
+    const containerModalProject=document.createElement('dialog')
+    containerModalProject.classList.add(`experience__project__modal${iter}`)
+    const titlePopupProject=document.createElement('h2')
+    titlePopupProject.textContent='PARTICIPE EN'
+    const messagePopupProject=document.createElement('p')
+    messagePopupProject.textContent=experience.project
+    const buttonCloseModalProject=document.createElement('button')
+    buttonCloseModalProject.setAttribute('type','button')
+    buttonCloseModalProject.textContent='close'
+    buttonCloseModalProject.setAttribute('onclick',`closeModal('experience__project__modal${iter}')`)
 
     containerWork.appendChild(bullet)
     containerWork.appendChild(nameCompany)
     containerWork.appendChild(namePosition)
     containerWork.appendChild(endDate)
-    constainerDescription.appendChild(summary)
-    constainerDescription.appendChild(containerMoreInfo)
+    containerDescription.appendChild(summary)
+    containerDescription.appendChild(containerMoreInfo)
     containerMoreInfo.appendChild(summaryTools)
     containerMoreInfo.appendChild(summaryProjects)
+    containerMoreInfo.appendChild(containerModalTools)
+    containerModalTools.appendChild(titlePopupTools)
+    containerModalTools.appendChild(messagePopupTools)
+    containerModalTools.appendChild(buttonCloseModalTools)
+    containerMoreInfo.appendChild(containerModalProject)
+    containerModalProject.appendChild(titlePopupProject)
+    containerModalProject.appendChild(messagePopupProject)
+    containerModalProject.appendChild(buttonCloseModalProject)
     Experience.appendChild(containerWork)
-    Experience.appendChild(constainerDescription)
-    
+    Experience.appendChild(containerDescription)
+    iter+=1
   })
   divhtml.appendChild(Experience)
-  console.log(divhtml)
+
 }
 export function renderGallery(data) {
   const divhtml = document.getElementById('render__gallery')
