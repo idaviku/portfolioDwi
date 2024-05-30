@@ -3,3 +3,7 @@
   color: mediumpurple;
   content: "Mdm";
 }
+/* .about__experience__container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+} */
