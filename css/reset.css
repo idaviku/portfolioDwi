@@ -8,13 +8,13 @@
 
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: light) {
-  body {
+  body, dialog{
     background: var(--blanco);
     color: var(--negro);
   }
 }
 @media (prefers-color-scheme: dark) {
-  body{
+  body, dialog{
     background: var(--negro);
     color: var(--blanco);
   }

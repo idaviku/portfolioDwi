@@ -24,6 +24,7 @@
   width: auto;
   background: inherit;
   flex-direction: column-reverse;
+  position: relative;
 }
 .nav__container__items{
   display: flex;
@@ -40,3 +41,11 @@
 .nav__item__logo a:hover{
   color: #d4a026;
 }
+.main__general{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* .about__experience__container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+} */
