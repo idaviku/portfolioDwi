@@ -9,12 +9,24 @@
     <!-- <link rel="stylesheet" href="./css/movilv2.css" /> -->
     <link rel="stylesheet" href="./css/mainMobile.css" />
     <!-- CSS específico para pantallas grandes -->
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/large-screen.css"> 
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1025px)"
+      href="./css/large-screen.css"
+    />
     <!-- CSS específico para pantallas medianas -->
-    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="./css/medium-screen.css">
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 769px) and (max-width: 1024px)"
+      href="./css/medium-screen.css"
+    />
     <!-- CSS específico para pantallas pequeñas -->
-    <link rel="stylesheet"  media="screen and (max-width: 768px)" href="./css/small-screen.css">
-    <script defer src="./js/main.js" ></script>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./css/small-screen.css"
+    />
+    <script defer src="./js/main.js"></script>
     <script defer src="./js/utils.js" type="module"></script>
     <script defer src="./js/services.js" type="module"></script>
     <script defer src="./js/components.js" type="module"></script>
@@ -23,29 +35,47 @@
   </head>
   <body>
     <header class="header__content">
-        <div class="nav__logo__container">
-          <p>DAVIKU</p>
-        </div>
-        <div class="nav__btnMenu__container">
+      <div class="nav__logo__container">
+        <p>DAVIKU</p>
+      </div>
+      <div class="nav__btnMenu__container menu">
+        <svg
+          fill="currentColor"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 80 80"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M64,48L64,48h-8V32h8c8.836,0,16-7.164,16-16S72.836,0,64,0c-8.837,0-16,7.164-16,16v8H32v-8c0-8.836-7.164-16-16-16
+		S0,7.164,0,16s7.164,16,16,16h8v16h-8l0,0l0,0C7.164,48,0,55.164,0,64s7.164,16,16,16c8.837,0,16-7.164,16-16l0,0v-8h16v7.98
+		c0,0.008-0.001,0.014-0.001,0.02c0,8.836,7.164,16,16,16s16-7.164,16-16S72.836,48.002,64,48z M64,8c4.418,0,8,3.582,8,8
+		s-3.582,8-8,8h-8v-8C56,11.582,59.582,8,64,8z M8,16c0-4.418,3.582-8,8-8s8,3.582,8,8v8h-8C11.582,24,8,20.417,8,16z M16,72
+		c-4.418,0-8-3.582-8-8s3.582-8,8-8l0,0h8v8C24,68.418,20.418,72,16,72z M32,48V32h16v16H32z M64,72c-4.418,0-8-3.582-8-8l0,0v-8
+		h7.999c4.418,0,8,3.582,8,8S68.418,72,64,72z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="display__blur visuallyHidden"></div>
+      <nav class="nav__menu__container visuallyHidden">
+        <div class="nav__header">
+          <kbd>&gt;&lowbar;</kbd>
           <input
-            type="checkbox"
-            id="checkbox4"
-            class="checkbox4 visuallyHidden"
+            type="text"
+            placeholder="Buscar en pagina"
+            aria-label="Buscar en pagina"
+            autocomplete="off"
+            spellcheck="false"
           />
-          <label for="checkbox4">
-            <div class="menu menu__style">
-              <span class="bar bar1"></span>
-              <span class="bar bar2"></span>
-              <span class="bar bar3"></span>
-              <span class="bar bar4"></span>
-              <span class="bar bar5"></span>
-            </div>
-          </label>
+          <kbd>ctrl+k</kbd>
         </div>
-        <div class="display__blur visuallyHidden"></div>
-        <nav class="nav__menu__container visuallyHidden">
+        <div class="nav__option">
           <ul class="nav__container__items">
-            <li class="nav__item">
+            <li class="nav__item activeOption">
               <a class="nav__item__a" href="/#home">Home</a>
             </li>
             <li class="nav__item">
@@ -113,7 +143,9 @@
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                  <polygon
+                    points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                  />
                   <line x1="12" x2="12" y1="22" y2="15.5" />
                   <polyline points="22 8.5 12 15.5 2 8.5" />
                   <polyline points="2 15.5 12 8.5 22 15.5" />
@@ -123,14 +155,37 @@
             </li>
             <li class="nav__item__logo">
               <a target="_blank" href="https://youtube.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
-                  <path d="M14 12L10.5 14V10L14 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z" stroke="currentColor" stroke-width="1.5"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M14 12L10.5 14V10L14 12Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
+        <div class="nav__footer">
+          <p><kbd>↩</kbd> seleccionar</p>
+          <p><kbd>↑</kbd><kbd>↓</kbd> navegar</p>
+          <p><kbd>Ctrl+k</kbd><kbd>Escape</kbd> cerrar</p>
+        </div>
+      </nav>
     </header>
     <main class="main__content">
       <section class="main__hero__container">
@@ -182,13 +237,16 @@
         <div class="about__portrair">
           <picture class="about__picture__portrair">
             <source src="/" />
-            <img src="https://fastly.picsum.photos/id/785/536/354.jpg?hmac=3cV8MuI_fMNjlG5HlThVzH_L9OjpFGvlxgIGhXHO6Y4"   alt="foto de perfil" class="about__portrair__img" />
+            <img
+              src="https://fastly.picsum.photos/id/785/536/354.jpg?hmac=3cV8MuI_fMNjlG5HlThVzH_L9OjpFGvlxgIGhXHO6Y4"
+              alt="foto de perfil"
+              class="about__portrair__img"
+            />
           </picture>
         </div>
         <div class="about__experience">
           <h2 class="principal__h2__tittle">Experiencia</h2>
-          <div class="experience__container">
-          </div>
+          <div class="experience__container"></div>
         </div>
         <div class="about__whatido">
           <h2 class="about__tittle">Que es lo que hago?</h2>
@@ -227,12 +285,24 @@
           <h2 class="principal__h2__tittle">Project</h2>
           <div class="project__skill">
             <ul class="project__list">
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item1</li></a>
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item2</li></a>
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item3</li></a>
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item4</li></a>
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item5</li></a>
-              <a class="project__skill__a" href="/"><li class="project__skill__item">item6</li></a>
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item1</li></a
+              >
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item2</li></a
+              >
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item3</li></a
+              >
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item4</li></a
+              >
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item5</li></a
+              >
+              <a class="project__skill__a" href="/"
+                ><li class="project__skill__item">item6</li></a
+              >
             </ul>
           </div>
         </div>
@@ -307,7 +377,9 @@
           </ul>
         </div>
         <div class="footer__msg">
-          <span class="footer__philosophy">No hagas lo que no quieres que te hahan - ubuntu</span>
+          <span class="footer__philosophy"
+            >No hagas lo que no quieres que te hahan - ubuntu</span
+          >
           <div class="footer__repo">
             <span class="project__star">23</span>
             <span class="project__branch">137</span>
