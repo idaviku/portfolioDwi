@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- <link rel="stylesheet" href="./css/movilv2.css" /> -->
     <link rel="stylesheet" href="./css/mainMobile.css" />
+    <!-- estilo para impresion -->
+     <link id="printFormat" rel="stylesheet" href="./css/print.css" media="print">
     <!-- CSS específico para pantallas grandes -->
     <link
       rel="stylesheet"
@@ -61,8 +63,8 @@
         </svg>
       </div>
       <div class="display__blur visuallyHidden"></div>
-      <nav class="nav__menu__container visuallyHidden">
-        <div class="nav__header">
+      <div class="menu__container">
+        <div class="nav__header__init">
           <kbd>&gt;&lowbar;</kbd>
           <input
             type="text"
@@ -73,216 +75,168 @@
           />
           <kbd>ctrl+k</kbd>
         </div>
-        <div class="nav__option">
-          <ul class="nav__container__items">
-            <li class="nav__item activeOption">
-              <a class="nav__item__a" href="/#home">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item__a" href="/#about">About</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item__a" href="/#porfolio">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item__a" href="/#contact">Contact</a>
-            </li>
-          </ul>
-          <ul class="nav__container__logo">
-            <li class="nav__item__logo">
-              <a target="_blank" href="https://github.com">
-                <?xml version="1.0" ?><svg
-                  class="feather feather-github"
-                  fill="none"
-                  height="24"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item__logo">
-              <a target="_blank" href="https://twitter.com">
-                <?xml version="1.0" ?><svg
-                  class="feather feather-twitter"
-                  fill="none"
-                  height="24"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item__logo">
-              <a target="_blank" href="https://codepen.io">
-                <?xml version="1.0" ?><svg
-                  class="feather feather-codepen"
-                  fill="none"
-                  height="24"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
-                  />
-                  <line x1="12" x2="12" y1="22" y2="15.5" />
-                  <polyline points="22 8.5 12 15.5 2 8.5" />
-                  <polyline points="2 15.5 12 8.5 22 15.5" />
-                  <line x1="12" x2="12" y1="2" y2="8.5" />
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item__logo">
-              <a target="_blank" href="https://youtube.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M14 12L10.5 14V10L14 12Z"
-                    fill="currentColor"
+        <nav class="nav__menu__container visuallyHidden">
+          <div class="nav__header">
+            <kbd>&gt;&lowbar;</kbd>
+            <input
+              type="text"
+              placeholder="Buscar en pagina"
+              aria-label="Buscar en pagina"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <kbd>ctrl+k</kbd>
+          </div>
+          <div class="nav__option">
+            <ul class="nav__container__items">
+              <li class="nav__item activeOption">
+                <a class="nav__item__a" href="/#hero">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item__a" href="/#about">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item__a" href="/#porfolio">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item__a" href="/#contact">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__container__logo">
+              <li class="nav__item__logo">
+                <a target="_blank" href="https://github.com">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-github"
+                    fill="none"
+                    height="24"
                     stroke="currentColor"
-                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item__logo">
+                <a target="_blank" href="https://twitter.com">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-twitter"
+                    fill="none"
+                    height="24"
                     stroke="currentColor"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="nav__footer">
-          <p><kbd>↩</kbd> seleccionar</p>
-          <p><kbd>↑</kbd><kbd>↓</kbd> navegar</p>
-          <p><kbd>Ctrl+k</kbd><kbd>Escape</kbd> cerrar</p>
-        </div>
-      </nav>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item__logo">
+                <a target="_blank" href="https://codepen.io">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-codepen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polygon
+                      points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                    />
+                    <line x1="12" x2="12" y1="22" y2="15.5" />
+                    <polyline points="22 8.5 12 15.5 2 8.5" />
+                    <polyline points="2 15.5 12 8.5 22 15.5" />
+                    <line x1="12" x2="12" y1="2" y2="8.5" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item__logo">
+                <a target="_blank" href="https://youtube.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14 12L10.5 14V10L14 12Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__footer">
+            <p><kbd>↩</kbd> seleccionar</p>
+            <p><kbd>↑</kbd><kbd>↓</kbd> navegar</p>
+            <p><kbd>Ctrl+k</kbd><kbd>Escape</kbd> cerrar</p>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main__content">
-      <section class="main__hero__container">
+      <section class="main__hero__container" id="hero">
         <div class="hero__container">
           <div class="hero__presentacion">
             <h2 class="hero__h2">Hola, mi nombre es</h2>
             <h1 class="hero__h1__name">David Saavedra.</h1>
             <h2 class="hero__description">
-              Inform&aacute;tico con experiencia en tecnolog&iacute;as de la
-              informaci&oacute;n.
+              Informático con +3 años de experiencia en tecnologías de la
+              información.
             </h2>
             <p class="principal__p__paragraph">
-              Perspicaz ante la resoluci&oacute;n de problemas, dividiendo y
-              descomponiendo la dificultad permitiendo una comprensi&oacute;n
-              amplia del caso, con una fascinaci&oacute;n por investigar y
-              descubrir conocimiento.
+              <strong>Perspicaz en la resolución de problemas</strong>, capaz de
+              descomponerlos para alcanzar una comprensión integral. Con interés
+              por buscar respuestas y descubrir soluciones innovadoras para
+              <strong>mejorar la eficiencia y el rendimiento.</strong>
             </p>
           </div>
-          <button class="global__button" type="button">Portafolio</button>
+          <button class="global__button" type="button" onclick="printCurriculum('.main__content')">Portafolio</button>
+        </div>
+        <div class="main__info">
+          <div class="main__info__container"></div>
+          <div class="main__info__courses"></div>
         </div>
       </section>
       <!-- section para la descripcion detallada del perfil -->
-      <section class="main__about__container main__general">
-        <div class="main__about__description">
-          <h2 class="principal__h2__tittle">About</h2>
-          <p class="principal__p__paragraph">
-            Hola! mi nombre es David soy una persona con una gran curiosida por
-            descubrir conocimiento y con ello aplicarlo para brindar soluciones
-            automaticas para la comunidad y con ello mejorar la calidad de los
-            procesos.<br />
-            Por lo general creo proyectos para la mejora de empresas destinadas
-            para la atencio de servicios mediante tecnologias emergentes de
-            calidad.<br />
-            Tengo interes en la ideologia de crear un entorno agradable para
-            todos.<br />
-            "no hagas a otros lo que no quieres que te hagan"
-          </p>
-          <div class="about__skill">
-            <ul class="about__list">
-              <li class="about__skill__item">item1</li>
-              <li class="about__skill__item">item2</li>
-              <li class="about__skill__item">item3</li>
-              <li class="about__skill__item">item4</li>
-              <li class="about__skill__item">item5</li>
-              <li class="about__skill__item">item6</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about__portrair">
-          <picture class="about__picture__portrair">
-            <source src="/" />
-            <img
-              src="https://fastly.picsum.photos/id/785/536/354.jpg?hmac=3cV8MuI_fMNjlG5HlThVzH_L9OjpFGvlxgIGhXHO6Y4"
-              alt="foto de perfil"
-              class="about__portrair__img"
-            />
-          </picture>
-        </div>
+      <section class="main__experience__container main__general" id="experience">
         <div class="about__experience">
           <h2 class="principal__h2__tittle">Experiencia</h2>
           <div class="experience__container"></div>
         </div>
-        <div class="about__whatido">
-          <h2 class="about__tittle">Que es lo que hago?</h2>
-          <div class="about__whatido__item">
-            <h2 class="about__whatido__tittle">Desarrollo</h2>
-            <p class="about__whatido__descripcion">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
-              asperiores adipisci dignissimos iste esse deserunt dolore impedit
-              velit placeat minus aliquam nemo saepe illo alias, quas numquam
-              necessitatibus animi ipsa!
-            </p>
-          </div>
-          <div class="about__whatido__item">
-            <h2 class="about__whatido__tittle">Gobernanza</h2>
-            <p class="about__whatido__descripcion">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, esse
-              labore. Laborum perspiciatis hic quae tempore odit, qui dicta
-              fugit mollitia et, doloremque veniam. Perferendis, ullam. Tempora
-              distinctio eligendi animi.
-            </p>
-          </div>
-          <div class="about__whatido__item">
-            <h2 class="about__whatido__tittle">Infraestructura</h2>
-            <p class="about__whatido__descripcion">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-              facere similique eligendi labore nesciunt, perferendis molestias.
-              Officia, cumque veritatis minus tenetur, quae facere cupiditate
-              fugit omnis dolores laborum id ullam.
-            </p>
-          </div>
-        </div>
       </section>
       <!-- section para describir los proyectos trabajado -->
-      <section class="main__portfolio__container main__general">
+      <section class="main__portfolio__container main__general" id="porfolio">
         <div class="main__porfolio__description">
-          <h2 class="principal__h2__tittle">Project</h2>
+          <h2 class="principal__h2__tittle">Proyectos</h2>
           <div class="project__skill">
             <ul class="project__list">
               <a class="project__skill__a" href="/"
@@ -309,8 +263,54 @@
         <section id="render__gallery"></section>
         <gallery-repos></gallery-repos>
       </section>
+      <section class="main__about__container main__general" id="about">
+        <div class="main__about__description">
+          <h2 class="principal__h2__tittle">Sobre mí</h2>
+          <p class="principal__p__paragraph">
+            <strong>
+              Me especializo en asegurar la estabilidad y seguridad de
+              infraestructuras TI.
+            </strong> Mis habilidades incluyen la gestión de redes,
+            administración de servidores (Linux y Windows), automatización de
+            tareas con scripts, herramientas de monitoreo y la continuidad del
+            negocio a través de estrategias de backup.
+          </p>
+          <br />
+          <p>
+            Mí enfoque estratégico se centra en <strong>
+              alinear la tecnología con los
+              objetivos empresariales, impulsando la innovación y el rendimiento.
+            </strong>
+            Me dedico al aprendizaje continuo y a <strong>
+              mantener optimos estándares
+              operativos, adaptándome a nuevas tecnologías
+            </strong> para ofrecer soluciones
+            efectivas y sostenibles.
+          </p>
+          <br />
+          <p>
+            <strong>Me inspira el concepto de ubuntu</strong>, que destaca la importancia de las
+            relaciones humanas, la colaboración y el <strong>respeto mutuo</strong>. En mi
+            trabajo, aplico la integración y el bienestar del equipo, buscando
+            contribuir positivamente dentro y fuera de la organización.
+          </p>
+          <br />
+          <div class="about__skill"></div>
+        </div>
+      </section>
       <!-- section para contacto -->
-      <section class="main__contact__container main__general">
+      <section class="main__contact__container main__general" id="contact">
+        
+        <!-- <div class="about__portrair">
+          <picture class="about__picture__portrair">
+            <source src="/" />
+            <img
+              src="https://fastly.picsum.photos/id/785/536/354.jpg?hmac=3cV8MuI_fMNjlG5HlThVzH_L9OjpFGvlxgIGhXHO6Y4"
+              alt="foto de perfil"
+              class="about__portrair__img"
+            />
+          </picture>
+        </div> -->
         <div class="main__contact__content">
           <h2 class="principal__h2__tittle">Ahora que?</h2>
           <h3 class="h3__subtittle__contact">hablemos...!</h3>
@@ -377,9 +377,9 @@
           </ul>
         </div>
         <div class="footer__msg">
-          <span class="footer__philosophy"
-            >No hagas lo que no quieres que te hahan - ubuntu</span
-          >
+          <span class="footer__philosophy">
+            umuntu ngumuntu ngabantu
+          </span>
           <div class="footer__repo">
             <span class="project__star">23</span>
             <span class="project__branch">137</span>
