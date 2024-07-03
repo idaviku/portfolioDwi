@@ -1,17 +1,17 @@
 {
   "basics": {
-  "name": "David Saavedra",
-    "label": "Informático con experiencia en tecnologías de la información.",
-    "image": "",
+    "name": "DAVID SAAVEDRA AJON",
+    "label": "Informático con +3 años de experiencia en tecnologías de la información.",
+    "image": "https://avatars.githubusercontent.com/u/117233664?v=4",
     "email": "xnk.davik@gmail.com",
     "phone": "(+51) 9876 543 21",
     "url": "https://daviku.com",
-    "summary": "Perspicaz ante la resolución de problemas, descomponiéndolos para lograr una comprensión integral. Con interés por buscar respuestas y descubrir soluciones innovadoras a los problemas enfocadas a la eficiencia y el rendimiento.",
+    "summary": "Perspicaz en la resolución de problemas, capaz de descomponerlos para alcanzar una comprensión integral. Con interés por buscar respuestas y descubrir soluciones innovadoras que mejoren la eficiencia y el rendimiento.",
     "location": {
       "address": "Lima",
       "postalCode": "15442",
       "city": "Lima",
-      "countryCode": "PE",
+      "country": "Perú",
       "region": "Lima"
     },
     "profiles": [{ 
@@ -39,7 +39,7 @@
     "url": "https://www.canvia.com/",
     "startDate": "2022-10-01",
     "endDate": "2024-02-30",
-    "summary": "Soporte técnico remoto y presencial a usuarios finales, solucionando problemas de hardware, software y conectividad. Gestioné y prioricé tickets para garantizar una rápida resolución de problemas.",
+    "summary": "Asistencia de IT remoto y presencial a usuarios finales, solucionando problemas de hardware, software y conectividad. Gestioné y prioricé tickets para garantizar una rápida resolución de problemas.",
     "tools": "Sistema de tickets (ServiceNow, Service Manager ITSM, Jira, powerapps), Suite de office (MS365, Google workspace), diagnostico (shell, Powershell, Windows tools, DevTools) configuraciones (windows autopilot, sql, as400, iis, Active Directory)",
     "project": "Control de incidencias y requerimientos para clientes (Prima AFP, Pacifico seguros, 3M)",
     "highlights": [
@@ -89,7 +89,7 @@
     "endDate": "2016-02-01",
     "summary": "Soporte técnico remoto presencial a usuarios finales. Solución a problemas de hardware, software y redes. Implementación de infraestructura en clientes.",
     "tools": "Suite de office (Ms office, LibreOffice), redes (tcp/ip, dhcp, dns, vlan), administración (Active Directory, Switches Cisco, unidades de cintas)",
-    "project": "",
+    "project": "null",
     "highlights": [
       "Started the company"
     ]
@@ -128,6 +128,23 @@
     "courses": [
       "DB1101 - Basic SQL"
     ]
+  },{
+    "institution": "Enterprise",
+    "url": "null",
+    "area": "any",
+    "studyType": "any",
+    "startDate": "null",
+    "endDate": "null",
+    "score": "4.0",
+    "courses": [
+       "ccna r&s",
+       "vmware sales profesional",
+       "vmware technical solutions professional",
+       "sophos certified sales consultant",
+       "sophos certified engineer",
+       "sophos certified technician",
+       "Análisis de vulnerabilidades de aplicaciones web – básico."
+    ]
   }],
   "awards": [{
     "title": "Award",
@@ -152,13 +169,13 @@
     "name": "Informático",
     "level": "Master",
     "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Testing",
-      "Networking",
-      "Sysadmin",
-      "Helpdesk"
+      "Administración de Sistemas Operativos",
+      "Arquitectura de Microserivicios",
+      "Automatización de Infraestructura",
+      "Gestión de Perfiles y Acceso",
+      "Gestión de Redes",
+      "Monitoreo y Diagnósticos",
+      "Respaldo y Recuperación de Datos"
     ]
   }],
   "languages": [{
