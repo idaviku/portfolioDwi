@@ -3,6 +3,22 @@
   color: mediumpurple;
   content: "Mdm";
 }
+.main__general{
+  padding: 0 7%;
+}
+.header__content{
+  padding: 0 7%;
+}
+.main__hero__container{
+  padding: 0 7%;
+}
+.portfolio__gallery__item:hover {
+  background-color: var(--color-hover);
+}
+.portfolio__gallery__item {
+  border: 1px solid var(--color-background); 
+}
+
 /* .about__experience__container{
   display: grid;
   grid-template-columns: repeat(5,1fr);
