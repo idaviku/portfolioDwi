@@ -11,7 +11,7 @@ import {galleryRepos} from "./components.js"
 
 async function getUser(){
   const data = await fetchData(apisUrl.github.user_url)
-  render.renderProfile(data)
+  /* render.renderProfile(data) */
 }
 async function getRepos(){
   const data = await fetchData(apisUrl.github.repos_url)
@@ -27,6 +27,9 @@ async function getRepos(){
 async function getDataCurriculum(){
   const data = await fetchData(apisUrl.dataJson)
   render.renderExperience(data)
+  render.renderSkills(data)
+  render.renderMainInfo(data)
+  render.renderCourses(data)
 }
 getRepos()
 getUser()

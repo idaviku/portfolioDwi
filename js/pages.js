@@ -3,7 +3,7 @@
         por componentes
 
 */
-import {nameGlobal} from './utils.js'
+import {nameGlobal,fetchData, apisUrl} from './utils.js'
 
 const originalText=nameGlobal.innerText
 const characters=originalText.split('')
@@ -17,12 +17,74 @@ function formatDate(fecha) {
   const month=objDate.getMonth()
   return `${formatMonth[month]} ${year}`
 }
+async function getImgProject(repo){
+  const data=await fetchData(apisUrl.github.contents_url.replace('{repo}',repo).replace('{archivo}','imgcore.webp'))
+  return data.download_url
+}
+export function renderMainInfo(data){
+  const divhtml=document.querySelector('.main__info__container')
+  const infoContainer=document.createElement('div')
+  const img=document.createElement('img')
+  img.classList.add('main__info__img')
+  img.setAttribute('src',data.basics.image)
+  const name=document.createElement('h2')
+  name.classList.add('main__info__name')
+  name.textContent=data.basics.name
+  const label=document.createElement('p')
+  label.textContent=data.basics.label
+  const summary=document.createElement('p')
+  summary.textContent=data.basics.summary
+  const mail=document.createElement('p')
+  mail.textContent=data.basics.email
+  const phone=document.createElement('p')
+  phone.textContent=data.basics.phone
+  const location=document.createElement('p')
+  location.textContent=`${data.basics.location.country} ${data.basics.location.city}`
+
+  infoContainer.appendChild(img)
+  infoContainer.appendChild(name)
+  infoContainer.appendChild(label)
+  infoContainer.appendChild(summary)
+  infoContainer.appendChild(mail)
+  infoContainer.appendChild(phone)
+  infoContainer.appendChild(location)
+  divhtml.appendChild(infoContainer)
+}
+export function renderCourses(data) {
+  const divhtml=document.querySelector('.main__info__courses')
+  const coursesList=document.createElement('ul')
+  const title=document.createElement('h3')
+  title.textContent='Cursos:'
+  data.education[1].courses.forEach(course =>{
+    const itemCourse=document.createElement('li')
+    itemCourse.classList.add('about__course__item')
+    itemCourse.textContent=course
+    coursesList.appendChild(itemCourse)
+  })
+  divhtml.appendChild(title)
+  divhtml.appendChild(coursesList)
+}
+export function renderSkills(data) {
+  const divhtml=document.querySelector('.about__skill')
+  const skillList=document.createElement('ul')
+  skillList.classList.add('about__list')
+  data.skills[0].keywords.forEach(skill =>{
+    const itemSkill=document.createElement('li')
+    itemSkill.classList.add('about__skill__item')
+    itemSkill.textContent=skill
+    skillList.appendChild(itemSkill)
+  })
+  divhtml.appendChild(skillList)
+}
 export function renderExperience(data){
   const divhtml = document.querySelector('.experience__container')
   const Experience = document.createElement('div')
   Experience.classList.add('about__experience__container')
   var iter=0
   data.work.forEach(experience => {
+    const containerExperience=document.createElement('div')
+    containerExperience.classList.add('container__experience',`container__experience__${iter}`)
+
     const containerWork = document.createElement('div')
     containerWork.classList.add('experience__work')
     const bullet = document.createElement('span')
@@ -49,12 +111,12 @@ export function renderExperience(data){
     summaryTools.setAttribute('type', 'button')
     summaryTools.classList.add('experience__tools')
     summaryTools.setAttribute('onclick',`openModal('experience__tools__modal${iter}')`)
-    summaryTools.classList.add('global__button')
-    summaryTools.innerHTML='&Hat; Tools'
+    summaryTools.classList.add('global__button','accent__button')
+    summaryTools.innerHTML='Tools &gt;'
     const containerModalTools=document.createElement('dialog')
     containerModalTools.classList.add(`experience__tools__modal${iter}`)
     const titlePopupTools=document.createElement('h2')
-    titlePopupTools.textContent='HERRAMIENTAS'
+    titlePopupTools.textContent='Herramientas:'
     const messagePopupTools=document.createElement('p')
     messagePopupTools.textContent=experience.tools
     const buttonCloseModalTools=document.createElement('button')
@@ -65,12 +127,12 @@ export function renderExperience(data){
     summaryProjects.setAttribute('type','button')
     summaryProjects.classList.add('experience__projects')
     summaryProjects.setAttribute('onclick',`openModal('experience__project__modal${iter}')`)
-    summaryProjects.classList.add('global__button')
-    summaryProjects.innerHTML='&Hat; Projects'
+    summaryProjects.classList.add('global__button','accent__button')
+    summaryProjects.innerHTML='Projects &gt;'
     const containerModalProject=document.createElement('dialog')
     containerModalProject.classList.add(`experience__project__modal${iter}`)
     const titlePopupProject=document.createElement('h2')
-    titlePopupProject.textContent='PARTICIPE EN'
+    titlePopupProject.textContent='Participe en:'
     const messagePopupProject=document.createElement('p')
     messagePopupProject.textContent=experience.project
     const buttonCloseModalProject=document.createElement('button')
@@ -94,18 +156,19 @@ export function renderExperience(data){
     containerModalProject.appendChild(titlePopupProject)
     containerModalProject.appendChild(messagePopupProject)
     containerModalProject.appendChild(buttonCloseModalProject)
-    Experience.appendChild(containerWork)
-    Experience.appendChild(containerDescription)
+    containerExperience.appendChild(containerWork)
+    containerExperience.appendChild(containerDescription)
+    Experience.appendChild(containerExperience)
     iter+=1
   })
   divhtml.appendChild(Experience)
 
 }
-export function renderGallery(data) {
+export async function renderGallery(data) {
   const divhtml = document.getElementById('render__gallery')
   const gallery = document.createElement('div');
   gallery.classList.add('portfolio__gallery')
-  data.forEach(project => {
+  for (const project of data) {
     const anchorItem = document.createElement('a');
     anchorItem.setAttribute('href',project.html_url)
 
@@ -114,14 +177,19 @@ export function renderGallery(data) {
     
     const image = document.createElement('img');
     image.classList.add('img__portfolio__item');
-    image.setAttribute('src', project.owner.avatar_url);
+    // image.setAttribute('src', project.owner.avatar_url);
+    image.setAttribute('src', await getImgProject(project.name));
     image.setAttribute('alt', project.owner.login);
     
+    const porfolioDescription=document.createElement('div')
+    porfolioDescription.classList.add('portfolio__description__container')
+
     const title = document.createElement('h3');
+    title.classList.add('portfolio__project__title')
     title.textContent = project.name;
     
     const category = document.createElement('span');
-    category.classList.add('porfolio__category')
+    category.classList.add('porfolio__category','global__button','secondary__button')
     category.textContent = project.language;
     
     const description = document.createElement('p');
@@ -129,12 +197,12 @@ export function renderGallery(data) {
     
     anchorItem.appendChild(projectItem)
     projectItem.appendChild(image);
-    projectItem.appendChild(title);
-    projectItem.appendChild(category);
-    projectItem.appendChild(description);
-    gallery.appendChild(anchorItem);
-
-  });
+    projectItem.appendChild(porfolioDescription);
+    porfolioDescription.appendChild(title);
+    porfolioDescription.appendChild(category);
+    porfolioDescription.appendChild(description);
+    gallery.appendChild(anchorItem);    
+  }
   divhtml.appendChild(gallery)
 }
 
