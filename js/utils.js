@@ -7,7 +7,8 @@ export const apisUrl = {
         user_url:'https://api.github.com/users/idaviku',
         repos_url:'https://api.github.com/users/idaviku/repos',
         gists_url:'https://api.github.com/users/idaviku/gists',
-        events_url:'https://api.github.com/users/idaviku/events'
+        events_url:'https://api.github.com/users/idaviku/events',
+        contents_url:'https://api.github.com/repos/idaviku/{repo}/contents/{archivo}?ref=main'
     },
     dataJson:'../data-cv.json'
 };
