@@ -34,6 +34,8 @@ export function renderMainInfo(data){
   label.textContent=data.basics.label
   const summary=document.createElement('p')
   summary.textContent=data.basics.summary
+  const web=document.createElement('p')
+  web.textContent=data.basics.website
   const mail=document.createElement('p')
   mail.textContent=data.basics.email
   const phone=document.createElement('p')
@@ -45,6 +47,7 @@ export function renderMainInfo(data){
   infoContainer.appendChild(name)
   infoContainer.appendChild(label)
   infoContainer.appendChild(summary)
+  infoContainer.appendChild(web)
   infoContainer.appendChild(mail)
   infoContainer.appendChild(phone)
   infoContainer.appendChild(location)
