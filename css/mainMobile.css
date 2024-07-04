@@ -234,6 +234,11 @@ strong{
   padding: 0 1rem;
   background: #176c7d3d;
   border: 1px solid;
+  width: fit-content;
+  text-shadow: var(--color-accent) 0em 0em 0.2em;
+  &:hover{
+    background: #176c7d3d;
+  }
 }
 .principal__h2__tittle {
   font-size: 2.8rem;
@@ -460,13 +465,22 @@ dialog button {
   padding: 2rem;
   margin: 2rem auto;
 }
+.a__contact{
+  font-size: 2.1rem;
+  padding: .5rem 1rem;
+  margin: 2rem 0;
+}
 
 /* 
 @footer
 */
+.footer__content {
+  margin: 5rem 0;
+}
 .footer__msg{
   display: flex;
   flex-direction: column;
   align-items: center;  
+  margin: 3rem 0;
 }
 
