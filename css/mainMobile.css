@@ -188,7 +188,7 @@ strong{
 .hero__h2 {
   font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
-.hero__h1__name {
+.hero__h2__name {
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 600;
   text-shadow: 0.05em 0.05em 0em #f00, -0.05em 0.02em 0em #0f0,
