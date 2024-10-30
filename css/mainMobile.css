@@ -379,7 +379,7 @@ dialog button {
   display: flex;
   overflow: overlay;
 }
-.project__skill__a {
+.project__skill__item {
   display: inline-block;
   position: relative;
   z-index: -1;
