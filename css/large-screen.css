@@ -1,7 +1,6 @@
 .nav__logo__container::before{
   font-weight: bold;
   color: lawngreen;
-  content: "Lrge";
 }
 /* .display__blur{
   display: none;
