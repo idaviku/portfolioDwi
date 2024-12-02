@@ -5,15 +5,44 @@ const displayBlur = document.querySelector('.display__blur')
 //const listaul=document.querySelector('.nav__container__items')
 const inputMenu=document.querySelector('.nav__header__init')
 const printFormat=document.querySelector('#printFormat')
+const searchInput=document.querySelector('.searchInput')
 
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('js/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registrado con éxito:', registration);
+      })
+      .catch(error => {
+        console.log('Error al registrar el Service Worker:', error);
+      });
+  });
+}
 function cambiarEstado() {
   document.querySelector('.nav__menu__container').classList.toggle('visuallyHidden');
   displayBlur.classList.toggle('visuallyHidden');
   inputMenu.classList.toggle('visuallyHidden')
+  searchInput.focus()
+  //const menuItems = menu.querySelectorAll('.nav__item__a')
+  //searchInput.addEventListener('input', ()=>{
+    //const filter=searchInput.value.toLowerCase()
+    //menuItems.forEach(e=>{
+      //const text=e.textContent.toLowerCase()
+      //if (text.includes(filter)) {
+        //e.focus()
+      //} 
+    //})
+  //})
 }
 seeMenu.onclick = () => {
   cambiarEstado();
 }
+inputMenu.onclick = () => {
+  cambiarEstado();
+}
+//observer.observe(seeMenu)
 /* seeMenu.addEventListener("click",()=>{
   cambiarEstado();
 }) */
@@ -83,6 +112,6 @@ function printCurriculum(reportPrint) {
   }, 500
 );
 }
-window.addEventListener("afterprint", (event) => {
+window.addEventListener("afterprint", () => {
   printFormat.href='./css/print.css'
 });
