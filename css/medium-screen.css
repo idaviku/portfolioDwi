@@ -1,7 +1,6 @@
 .nav__logo__container::before{
   font-weight: bold;
   color: mediumpurple;
-  content: "Mdm";
 }
 .main__general{
   padding: 0 7%;

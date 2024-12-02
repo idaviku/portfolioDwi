@@ -69,6 +69,12 @@ strong{
   display: none;
   overflow: hidden;
 }
+#hero,#experience,#porfolio,#about,#contact{
+  scroll-margin-top: 10dvh;
+}
+.nav__logo__container::before {
+  content: "\05D0";
+}
 .nav__btnMenu__container {
   display: flex;
   width: 5rem;
