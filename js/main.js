@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
         nextIndex = currentIndex < visibleItems.length - 1 ? currentIndex + 1 : 0
         break;
       case 'Enter':
-        selectFirstVisibleOption()
         visibleItems[currentIndex].click()
         break;
     }

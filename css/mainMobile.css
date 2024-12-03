@@ -74,7 +74,7 @@ strong{
   background: var(--color-background-dark);
 }
 #hero,#experience,#porfolio,#about,#contact{
-  scroll-margin-top: 10dvh;
+  scroll-margin-top: 15dvh;
 }
 .nav__logo__container::before {
   content: "\05D0";
