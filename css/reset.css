@@ -47,6 +47,7 @@
     --color-hover:var(--color-hover-light);
   }
 }
+
 @media (prefers-color-scheme: dark) {
   :root{
     --style-theme:var(--style-theme-dark);
@@ -58,6 +59,27 @@
     --color-hover:var(--color-hover-dark);
   }
 }
+
+[data-theme="light"] {
+  --style-theme:var(--style-theme-light);
+  --color-background: var(--color-background-light);
+  --color-text:var(--color-text-light);
+  --color-strong:var(--color-strong-light);
+  --color-accent:var(--color-accent-light);
+  --color-secondary-high:var(--color-secondary-high-light);
+  --color-hover:var(--color-hover-light);
+}
+
+[data-theme="dark"] {
+  --style-theme:var(--style-theme-dark);
+  --color-background:var(--color-background-dark);
+  --color-text:var(--color-text-dark);
+  --color-strong:var(--color-strong-dark);
+  --color-accent:var(--color-accent-dark);
+  --color-secondary-high:var(--color-secondary-high-dark);
+  --color-hover:var(--color-hover-dark);
+}
+
 /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
@@ -68,6 +90,7 @@
     transition: none !important;
   }
 }
+
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
   margin: 0;
