@@ -138,3 +138,26 @@ function printCurriculum(reportPrint) {
 window.addEventListener("afterprint", () => {
   printFormat.href='./css/print.css'
 });
+
+
+const themeToggle = document.querySelector('.theme-selector');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeToggle.value = savedTheme;
+} else {
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', systemTheme);
+    themeToggle.value = systemTheme;
+}
+
+themeToggle.addEventListener('change', (e) => {
+    const selectedTheme = e.target.value;
+    if (selectedTheme === 'system') {
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', systemTheme);
+    } else {
+        document.documentElement.setAttribute('data-theme', selectedTheme);
+    }
+    localStorage.setItem('theme', selectedTheme);
+});

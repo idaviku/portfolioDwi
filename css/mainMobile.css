@@ -69,6 +69,9 @@ strong{
   display: none;
   overflow: hidden;
 }
+.theme-selector{
+  color: var(--color-text-dark);
+}
 #hero,#experience,#porfolio,#about,#contact{
   scroll-margin-top: 10dvh;
 }
