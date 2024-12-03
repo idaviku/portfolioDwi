@@ -71,6 +71,7 @@ strong{
 }
 .theme-selector{
   color: var(--color-text-dark);
+  background: var(--color-background-dark);
 }
 #hero,#experience,#porfolio,#about,#contact{
   scroll-margin-top: 10dvh;
@@ -175,7 +176,7 @@ strong{
 .main__hero__container {
   display: flex;
   position: relative;
-  top: -11dvh;
+  top: -15dvh;
   height: 100dvh;
   padding: 0 1.6rem;
   background-image: var(--style-theme);
