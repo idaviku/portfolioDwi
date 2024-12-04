@@ -30,8 +30,6 @@ export function renderMainInfo(data){
   const name=document.createElement('h2')
   name.classList.add('main__info__name')
   name.textContent=data.basics.name
-  const label=document.createElement('p')
-  label.textContent=data.basics.label
   const summary=document.createElement('p')
   summary.textContent=data.basics.summary
   const web=document.createElement('p')
@@ -45,7 +43,6 @@ export function renderMainInfo(data){
 
   infoContainer.appendChild(img)
   infoContainer.appendChild(name)
-  infoContainer.appendChild(label)
   infoContainer.appendChild(summary)
   infoContainer.appendChild(web)
   infoContainer.appendChild(mail)
@@ -106,8 +103,17 @@ export function renderExperience(data){
     const containerDescription = document.createElement('div')
     containerDescription.classList.add('experience__description')
     const summary = document.createElement('p')
-    summary.classList.add('experience__summary')
-    summary.textContent=experience.summary
+    
+
+    const responsabilitiesList = document.createElement('ul')
+    responsabilitiesList.classList.add('experience__responsabilitiesList')
+    experience.responsabilities.forEach(resp => {
+      const itemResponsability = document.createElement('li')
+      itemResponsability.classList.add('experience__responsability__item')
+      itemResponsability.textContent=resp
+      responsabilitiesList.appendChild(itemResponsability)
+    })
+
     const containerMoreInfo = document.createElement('div')
     containerMoreInfo.classList.add('experience__more__info')
     const summaryTools = document.createElement('button')
@@ -147,7 +153,7 @@ export function renderExperience(data){
     containerWork.appendChild(nameCompany)
     containerWork.appendChild(namePosition)
     containerWork.appendChild(endDate)
-    containerDescription.appendChild(summary)
+    containerDescription.appendChild(responsabilitiesList)
     containerDescription.appendChild(containerMoreInfo)
     containerMoreInfo.appendChild(summaryTools)
     containerMoreInfo.appendChild(summaryProjects)
