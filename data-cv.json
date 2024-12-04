@@ -7,7 +7,7 @@
     "email": "xnk.davik@gmail.com",
     "phone": "(+51) 9876 543 XX",
     "url": "https://daviku.com",
-    "summary": "Perspicaz en la resolución de problemas, capaz de descomponerlos para alcanzar una comprensión integral. Con interés por buscar respuestas y descubrir soluciones innovadoras que mejoren la eficiencia y el rendimiento.",
+    "summary": "Informático con más de 3 años de experiencia en tecnologías de la información. Perspicaz en la resolución de problemas, capaz de estructurarlos para alcanzar una comprensión integral. Con interés por buscar respuestas y descubrir soluciones eficientes para mejorar la calidad del servicio. Me considero una persona comprometida, analítica y orientada a objetivos.",
     "location": {
       "address": "Lima",
       "postalCode": "15442",
@@ -36,59 +36,80 @@
   },
   "work": [{
     "name": "Canvia",
-    "position": "Especialista De Soporte De SD",
+    "position": "IT Support Specialists",
     "url": "https://www.canvia.com/",
     "startDate": "2022-10-01",
     "endDate": "2024-02-30",
-    "summary": "Asistencia de IT remoto y presencial a usuarios finales, solucionando problemas de hardware, software y conectividad. Gestioné y prioricé tickets para garantizar una rápida resolución de problemas.",
-    "tools": "Sistema de tickets (ServiceNow, Service Manager ITSM, Jira, powerapps), Suite de office (MS365, Google workspace), diagnostico (shell, Powershell, Windows tools, DevTools) configuraciones (windows autopilot, sql, as400, iis, Active Directory)",
+    "responsabilities": [ 
+      "Resolví incidentes y requerimientos de más de 500 estaciones de trabajo relacionados con sistemas operativos, redes, control de acceso basado en roles y aplicaciones corporativas, logrando una tasa de satisfacción del 95%.",
+      "Responsable del aprovisionamiento de nuevos equipos mediante Windows Autopilot, mejorando el proceso de onboarding de nuevos empleados al reducir el tiempo de configuración en un 30%.",
+      "Coordiné el mantenimiento y actualización de hardware y software, reduciendo los fallos de los sistemas en un 25%.",
+      "Colaboré en la capacitación de personal en el uso de herramientas y sistemas internos, logrando una reducción del 15% en las solicitudes de soporte relacionadas con problemas de usuarios."
+    ],
+    "tools": "Sistema de tickets (ServiceNow, Service Manager ITSM, Jira, PowerApps) · Suites Ofimática (MS365) · Diagnóstico (Event Viewer, Resource Monitor, Bash, PowerShell, Windows Tools, DevTools) · Gestión y soporte TI (Azure Portal, Azure Intune, Windows Autopilot, AS400, IIS, Active Directory) · Control de acceso (RBAC, SQL, SSO, MFA). ",
     "project": "Control de incidencias y requerimientos para clientes (Prima AFP, Pacifico seguros, 3M)",
     "highlights": [
       "Started the company"
     ]
   },{
-    "name": "Unidad Ejecutora 120 MINEDU",
-    "position": "Control De Calidad",
+    "name": "PE-CONSUCODE-201144",
+    "position": "Technical Verification Specialist",
     "url": "null",
     "startDate": "2020-09-01",
     "endDate": "2022-04-01",
-    "summary": "Verificación y validación del cumplimiento de las características técnicas ofertadas por el proveedor de los equipos adquiridos garantizando la calidad y el rendimiento. Revisión de antecedentes técnicas de los equipos adquiridos. Emitir informes evidenciadas de conformidad de los entregables.",
-    "tools": "Herramientas de rendimiento (AIDA64, HWINFO, PassMark), instrumentos de medición (Multímetro).",
+    "responsabilities": [ 
+      "Valide los nuevos equipos tecnológicos, garantizando que cumplieran con los estándares de calidad y rendimiento definidos por la empresa.",
+      "Ejecuté pruebas técnicas exhaustivas para verificar la funcionalidad y la integración de sistemas, detectando fallos en etapas tempranas.",
+      "Creé informes detallados sobre el estado de la verificación técnica, proporcionando recomendaciones para mejorar el rendimiento de las soluciones tecnológicas."
+    ],
+    "tools": "Diagnóstico (Apptimize, loader.io, AIDA64, HWINFO, PassMark) · Instrumentos de medición (Multímetro, termógrafo) · Herramientas de automatización (appium, selenium).",
     "project": "null",
     "highlights": [
       "Started the company"
     ]
   },{
     "name": "Smartteg SAC",
-    "position": "Especialista En Tecnología Informática",
+    "position": "IT Specialists",
     "url": "https://www.smartteg.com/",
     "startDate": "2017-12-01",
     "endDate": "2020-04-01",
-    "summary": "Administración de SO, servidores y servicios de red. Configuraciones, actualizaciones y mantenimiento continuo. Diseño, implementación y migración de infraestructura asegurando la disponibilidad y seguridad de los recursos. Diagnósticos y resolución de problemas complejos de infraestructura.",
-    "tools": "Herramientas de monitoreo (Nagios, VMWare VCenter, Sophos Central, Veeam), virtualización (VMware vSphere, vMotion, vCenter converter standalone), sistemas operativos (Windows, Linux <Ubuntu-debian-openSuse>), configuración (enrutamientos, migraciones, backup).",
+    "responsabilities": [ 
+      "Gestione de la administración y mantenimiento de plataformas de virtualización VMware vSphere, incluyendo la implementación de estrategias de recuperación ante desastres.",
+      "Realice la migración de clientes a servidores VMware regionales, optimizando la eficiencia operativa y minimizando riesgos de fallas durante el proceso.",
+      "Implementé soluciones de alta disponibilidad y balanceo de carga, garantizando un tiempo de actividad del 99%.",
+      "Desarrollé la automatización de procesos de monitoreo y gestión de eventos mediante scripts y herramientas de orquestación, reduciendo la intervención manual y mejorando la eficiencia operativa."
+    ],
+    "tools": "Gestión y soporte TI (VMWare VCenter, Sophos Central, Nagios, SCCM, Veeam) · Virtualización (VMware vSphere, vRealize, vMotion, vCenter converter standalone) · Sistemas operativos (Windows Server, Ubuntu, Debian, OpenSuse, Fedora) · Configuración (servidores, enrutamientos, acceso, firewall, migraciones, respaldos) · Scripting (Bash, Powershell, Python).",
     "project": "Diseño y migración exitosa de servidores de clientes a los servidores on-premise regionales.",
     "highlights": [
       "Started the company"
     ]
   },{
     "name": "Agencia De Aduana Transcontinental",
-    "position": "Asistente De Sistemas",
+    "position": "IT Assistant",
     "url": "null",
     "startDate": "2016-04-01",
     "endDate": "2017-04-01",
-    "summary": "Gestión y resolución de tickets. Monitoreo de los servidores, redes y sistema de almacenamiento. Instalación de parches de seguridad, actualizaciones y despliegue de aplicaciones. ",
-    "tools": "sistema de ticket (Otrs, trello), herramienta de monitoreo (Icinga), administración (Active Directory, Bind, Squid-cache, Nginx, Msql, FreePBX, VNC), almacenamiento (san, nas).",
+    "responsabilities": [ 
+      "Administré y monitoreé los servicios esenciales para el funcionamiento de la empresa, reduciendo el tiempo de detección de incidencias.",
+      "Proporcioné soporte técnico a más de 100 usuarios, manteniendo una tasa de satisfacción del cliente del 95%.",
+      "Realicé el mantenimiento y reparación de la infraestructura de red, resolviendo problemas de conectividad y optimizando la disponibilidad del sistema.",
+      "Restaure los servicios de TI y servidores de archivos tras un ataque de ransomware, utilizando técnicas de recuperación ante desastres."
+    ],
+    "tools": "Sistema de tickets (Otrs, trello) · Suites Ofimática (MS365, Google Workspace) · Herramienta de monitoreo (Icinga, Event Viewer, Rsyslog) · Gestión y soporte TI (Active Directory, Bind, Squid-cache, Nginx, Msql, FreePBX, VNC) · Almacenamiento (SAN, NAS).",
     "project": "Reparación de la infraestructura de red de la sede principal. Restauración de servicios y file Server después de ataque ransomware.",
     "highlights": [
       "Started the company"
     ]
   },{
     "name": "Business Computer Services Sac",
-    "position": "Soporte Técnico",
+    "position": "Systems Support Technician",
     "url": "null",
     "startDate": "2015-10-01",
     "endDate": "2016-02-01",
-    "summary": "Soporte técnico remoto presencial a usuarios finales. Solución a problemas de hardware, software y redes. Implementación de infraestructura en clientes.",
+    "responsabilities": [ 
+      "Soporte técnico remoto presencial a usuarios finales. Solución a problemas de hardware, software y redes. Implementación de infraestructura en clientes."
+    ],
     "tools": "Suite de office (Ms office, LibreOffice), redes (tcp/ip, dhcp, dns, vlan), administración (Active Directory, Switches Cisco, unidades de cintas)",
     "project": "null",
     "highlights": [
@@ -96,12 +117,16 @@
     ]
   },{
     "name": "Alternativa Tecnológica Sac",
-    "position": "Soporte Técnico",
+    "position": "Systems Support Technician",
     "url": "https://www.atsac.com.pe/",
     "startDate": "2015-03-01",
     "endDate": "2015-09-01",
-    "summary": "Implementación de centros de computo asegurando la eficiencia de los recursos. Renovación tecnológica y mantenimiento preventivo de centros de cómputo. Instalación, configuración y mantenimiento inicial de hardware y software.",
-    "tools": "Gestión de inventario (seguimiento de activos y componentes, evaluación de hardware) planificación (MS Project), herramientas de implementación de equipos (servidor <dhcp-pxe-fileServer>, switch, patch cord).",
+    "responsabilities": [ 
+      "Estuve a cargo del registro y control de activos tecnológicos, garantizando el correcto seguimiento de los dispositivos y equipos dentro de la infraestructura de TI de la empresa.",
+      "Participé en proyectos de renovación tecnológica de clientes, realizando la migración de datos de usuario y asegurando la configuración exitosa de aplicaciones corporativas.",
+      "Realice la implementación de un centro de datos para un entorno empresarial."
+    ],
+    "tools": "Gestión de inventario (seguimiento de activos y componentes, evaluación de hardware) · Planificación (MS Project) · Herramientas de implementación de equipos (servidor Windows Deployment Services<PXE-TFTP>, DHCP, SMB, Switch 1Gbps, Patchcord Cat5e).",
     "project": "Clonación de equipos masivos mediante pxe. Migración de equipo arrendados de clientes.",
     "highlights": [
       "Started the company"
