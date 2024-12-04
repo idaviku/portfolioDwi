@@ -68,7 +68,7 @@ dialog{
   margin: 0 0 3rem 0;
 }
 .main__info__courses {
-  margin: 5rem 0;
+  margin: 3rem 0 0;
 }
 .main__info__name {
   font-size: 18px;
@@ -129,7 +129,7 @@ dialog{
   display: block;
   gap: 0;
 }
-.about__experience__container> :nth-child(-n+3) {
+.about__experience__container> :nth-child(-n+2) {
   margin-inline-start: 7cm;
 }
 dialog>h2,
@@ -143,8 +143,8 @@ dialog>h2{
   margin-block-start: 1cm;
 }
 
-.container__experience__2,
-.container__experience__5 {
+.container__experience__1,
+.container__experience__4 {
   /* break-after: page; */
   page-break-after: always;
 }
@@ -154,7 +154,7 @@ dialog>h2{
   /* background-color: lightpink; */
   color: black;
   max-width: 21cm;
-  height: max-content;
+  max-height: max-content;
   page-break-after: always;
 }
 .main__about__description{
