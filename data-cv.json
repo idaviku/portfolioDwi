@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "DAVID SAAVEDRA AJON",
+    "label": "Informático con +3 años de experiencia en tecnologías de la información.",
+    "image": "https://avatars.githubusercontent.com/u/117233664?v=4",
+    "website":"www.daviku.com",
+    "email": "xnk.davik@gmail.com",
+    "phone": "(+51) 9876 543 XX",
+    "url": "https://daviku.com",
+    "summary": "Informático con más de 3 años de experiencia en tecnologías de la información. Perspicaz en la resolución de problemas, capaz de estructurarlos para alcanzar una comprensión integral. Con interés por buscar respuestas y descubrir soluciones eficientes para mejorar la calidad del servicio. Me considero una persona comprometida, analítica y orientada a objetivos.",
+    "location": {
+      "address": "Lima",
+      "postalCode": "15442",
+      "city": "Lima",
+      "country": "Perú",
+      "region": "Lima"
+    },
+    "profiles": [{ 
+      "network": "GitHub",
+      "username": "Daviku",
+      "url": "https://github.com/idaviku"
+    },
+    { 
+      "network": "Twitter",
+      "username": "Daviku",
+      "url": "https://github.com/idaviku"
+    },{ 
+      "network": "CodePen",
+      "username": "Daviku",
+      "url": "https://github.com/idaviku"
+    },{ 
+      "network": "YouTube",
+      "username": "Daviku",
+      "url": "https://youtube.com/idaviku"
+    }]  
+  },
+  "work": [{
+    "name": "Canvia",
+    "position": "IT Support Specialists",
+    "url": "https://www.canvia.com/",
+    "startDate": "2022-10-01",
+    "endDate": "2024-02-30",
+    "responsabilities": [ 
+      "Resolví incidentes y requerimientos de más de 500 estaciones de trabajo relacionados con sistemas operativos, redes, control de acceso basado en roles y aplicaciones corporativas, logrando una tasa de satisfacción del 95%.",
+      "Responsable del aprovisionamiento de nuevos equipos, mejorando el proceso de onboarding de nuevos empleados al reducir el tiempo de configuración en un 30%.",
+      "Coordiné el mantenimiento y actualización de hardware y software, reduciendo los fallos de los sistemas en un 25%.",
+      "Colaboré en la capacitación de personal en el uso de herramientas y sistemas internos, logrando una reducción del 15% en las solicitudes de soporte relacionadas con problemas de usuarios."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "name": "PE-CONSUCODE-201144",
+    "position": "Technical Verification Specialist",
+    "url": "null",
+    "startDate": "2020-09-01",
+    "endDate": "2022-04-01",
+    "responsabilities": [ 
+      "Valide los nuevos equipos tecnológicos, garantizando que cumplieran con los estándares de calidad y rendimiento definidos por la empresa.",
+      "Ejecuté pruebas técnicas exhaustivas para verificar la funcionalidad y la integración de sistemas, detectando fallos en etapas tempranas.",
+      "Creé informes detallados sobre el estado de la verificación técnica, proporcionando recomendaciones para mejorar el rendimiento de las soluciones tecnológicas."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "name": "Smartteg SAC",
+    "position": "IT Specialists",
+    "url": "https://www.smartteg.com/",
+    "startDate": "2017-12-01",
+    "endDate": "2020-04-01",
+    "responsabilities": [ 
+      "Gestione de la administración y mantenimiento de plataformas de virtualización, incluyendo la implementación de estrategias de recuperación ante desastres.",
+      "Realice la migración de clientes a servidores regionales, optimizando la eficiencia operativa y minimizando riesgos de fallas durante el proceso.",
+      "Implementé soluciones de alta disponibilidad y balanceo de carga, garantizando un tiempo de actividad del 99%.",
+      "Desarrollé la automatización de procesos de monitoreo y gestión de eventos mediante scripts y herramientas de orquestación, reduciendo la intervención manual y mejorando la eficiencia operativa."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "name": "Agencia De Aduana Transcontinental",
+    "position": "IT Assistant",
+    "url": "null",
+    "startDate": "2016-04-01",
+    "endDate": "2017-04-01",
+    "responsabilities": [ 
+      "Administré y monitoreé los servicios esenciales para el funcionamiento de la empresa, reduciendo el tiempo de detección de incidencias.",
+      "Proporcioné soporte técnico a más de 100 usuarios, manteniendo una tasa de satisfacción del cliente del 95%.",
+      "Realicé el mantenimiento y reparación de la infraestructura de red, resolviendo problemas de conectividad y optimizando la disponibilidad del sistema.",
+      "Restaure los servicios de TI y servidores de archivos tras un ataque de ransomware, utilizando técnicas de recuperación ante desastres."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "name": "Business Computer Services Sac",
+    "position": "Systems Support Technician",
+    "url": "null",
+    "startDate": "2015-10-01",
+    "endDate": "2016-02-01",
+    "responsabilities": [ 
+      "Soporte técnico remoto presencial a usuarios finales. Solución a problemas de hardware, software y redes. Implementación de infraestructura en clientes."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "name": "Alternativa Tecnológica Sac",
+    "position": "Systems Support Technician",
+    "url": "https://www.atsac.com.pe/",
+    "startDate": "2015-03-01",
+    "endDate": "2015-09-01",
+    "responsabilities": [ 
+      "Estuve a cargo del registro y control de activos tecnológicos, garantizando el correcto seguimiento de los dispositivos y equipos dentro de la infraestructura de TI de la empresa.",
+      "Participé en proyectos de renovación tecnológica de clientes, realizando la migración de datos de usuario y asegurando la configuración exitosa de aplicaciones corporativas.",
+      "Realice la implementación de un centro de datos para un entorno empresarial."
+    ],
+    "tools": "null",
+    "project": "null",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  },{
+    "institution": "Enterprise",
+    "url": "null",
+    "area": "any",
+    "studyType": "any",
+    "startDate": "null",
+    "endDate": "null",
+    "score": "4.0",
+    "courses": [
+       "ccna r&s",
+       "vmware sales profesional",
+       "vmware technical solutions professional",
+       "sophos certified sales consultant",
+       "sophos certified engineer",
+       "sophos certified technician",
+       "Análisis de vulnerabilidades de aplicaciones web – básico."
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Informático",
+    "level": "Master",
+    "keywords": [
+      "Administración de Sistemas Operativos",
+      "Arquitectura de Microserivicios",
+      "Automatización de Infraestructura",
+      "Gestión de Perfiles y Acceso",
+      "Gestión de Redes",
+      "Monitoreo y Diagnósticos",
+      "Respaldo y Recuperación de Datos"
+    ]
+  }],
+  "languages": [{
+    "language": "Español",
+    "fluency": "Native speaker"
+  },{
+    "language": "English",
+    "fluency": "B1"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }]
+}
