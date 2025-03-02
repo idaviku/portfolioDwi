@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /*.json
+Disallow: /*.js
+Allow: /
+
+User-agent: Bingbot
+Disallow: /*.json
+Disallow: /*.js
+Allow: /
+
+User-agent: *
+Disallow: /
