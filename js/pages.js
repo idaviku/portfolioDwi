@@ -21,6 +21,13 @@ async function getImgProject(repo){
   const data=await fetchData(apisUrl.github.contents_url.replace('{repo}',repo).replace('{archivo}','imgcore.webp'))
   return data.download_url
 }
+
+function desofs(element) {
+  const contentCodf = element
+  const contentDecodf = atob(contentCodf)
+  return contentDecodf
+}
+
 export function renderMainInfo(data){
   const divhtml=document.querySelector('.main__info__container')
   const infoContainer=document.createElement('div')
@@ -91,8 +98,9 @@ export function renderExperience(data){
     bullet.classList.add('bullet')
     bullet.textContent='•'
     const nameCompany = document.createElement('h3')
-    nameCompany.classList.add('experience__company')
-    nameCompany.textContent=experience.name
+    nameCompany.classList.add('experience__company','cnt__ofs')
+    const valDecodf = desofs(experience.name)
+    nameCompany.textContent=valDecodf
     const namePosition = document.createElement('h4')
     namePosition.classList.add('experience__position')
     namePosition.textContent=experience.position
