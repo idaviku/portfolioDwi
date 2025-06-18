@@ -175,10 +175,10 @@ strong{
 }
 .main__hero__container {
   display: flex;
-  position: relative;
-  top: -15dvh;
-  height: 100dvh;
-  padding: 0 1.6rem;
+  /*position: relative;*/
+  /*top: -15dvh;*/
+  /*height: 100dvh;*/
+  padding: 1rem 1.6rem;
   background-image: var(--style-theme);
 }
 .hero__container {
